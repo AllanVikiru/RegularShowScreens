@@ -41,7 +41,7 @@ def reply():
 # tweet scraped images
 def screen():
     # access screenshots folder
-    os.chdir('screenshots')
+    os.chdir('screens')
 
     while True:
         try:
@@ -57,4 +57,4 @@ def screen():
 
 while True:
     print("TWITTERRRRR")  # a Brooklyn Nine-Nine reference
-    reply()
+    screen()
