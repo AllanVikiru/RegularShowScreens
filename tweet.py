@@ -8,7 +8,7 @@ first_tweet = 'Don\'t mind this tweet. It\'s a test 👀'
 first_reply = 'Aye! It works 🤩 '
 # after sending out the first tweet, ctrl c + ctrl v the tweet id from the tweet url:
 # https://twitter.com/{your_account}/status/{tweet_id}
-first_tweet_id = 1248564398643429377
+first_tweet_id = 0
 
 interval: int = 30  # set interval to 30 seconds
 
