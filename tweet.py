@@ -49,7 +49,7 @@ def screen():
             for frame in os.listdir('.'):
                 api.update_with_media(frame)
                 print("I'll be back")  # a Terminator reference
-                time.sleep(interval)  # wait 30 seconds to tweet next image to avoid timeout
+                time.sleep(interval)  # wait 30 seconds to tweet next image
         except Exception as e:
             print(e)
             pass
