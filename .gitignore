@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# twitter api credentials
+credentials.py
+
+# screens folder
+screens/
+
+#pycharm config
+.idea/
