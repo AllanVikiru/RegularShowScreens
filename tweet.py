@@ -1,6 +1,7 @@
 #  bot for tweeting
+import random  # module for randomising variables
 import tweepy as twt  # library for accessing twitter api
-import time  # time module for tweet frequency
+import time  # time module
 import os  # os module
 import credentials as app  # fetch twitter credentials
 
@@ -40,14 +41,16 @@ def reply():
 
 # tweet scraped images
 def screen():
-    # access screenshots folder
+    # access and select screenshots folder
     os.chdir('screens')
+    frames = os.listdir('.')
 
     while True:
         try:
-            # loop and tweet over images in folder
-            for frame in os.listdir('.'):
-                api.update_with_media(frame)
+            # loop over images
+            for frame in frames:
+                frame = random.choice(frames)  # select random image
+                api.update_with_media(frame)  # tweet image
                 print("I'll be back")  # a Terminator reference
                 time.sleep(interval)  # wait 30 seconds to tweet next image
         except Exception as e:
